@@ -1,0 +1,18 @@
+@import "./components/about";
+@import "./components/projects";
+@import "./components/global";
+@import "./components/home";
+@import "./components/intro";
+@import "./components/modal";
+@import "./components/skills";
+@import "./abstracts/variables";
+
+/* Page that doesn't exist */
+.notfound {
+  font-size: xx-large;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}

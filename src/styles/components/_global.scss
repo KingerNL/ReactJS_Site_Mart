@@ -1,0 +1,227 @@
+/* General body and style */
+@import "../abstracts/variables";
+
+@font-face {
+  font-family: 'Wotfard';
+  src: url('../fonts/wotfard-regular/Wotfard_Regular/Wotfard_Regular_Webfont/Wotfard-Regular-webfont/wotfard-regular-webfont.ttf')
+  format("truetype");
+  font-weight: 600;
+  font-style: normal;
+  font-display: fallback;
+}
+
+body {
+  background-color: $background;
+  color: $white;
+  font-size: x-large;
+  margin: 0;
+  font-family: 'Wotfard';
+}
+
+.content {
+  width: 100%;
+  overflow: hidden;
+
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+.menu-photo {
+  width: 100%;
+  background:#181818;
+  align-items: center;
+  margin: 0px 15.5px;
+  padding: 10px 0px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  .p2 {
+    font-size: 15px;
+    color: #b1b1b1;
+  }
+  img {
+    width: 125px;
+    height: 120px;
+    object-fit: contain;
+  }
+}
+
+/* Selectie */
+
+::selection{
+  background-color: white;
+  color:#1d1d1d;
+  text-shadow: none;
+}
+
+/* PDF settings */
+
+.PDF {
+  font-family: 'Roboto';
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  height: 100px;
+  width: 150px;
+  background-color: #000000;
+  opacity: 0.8;
+  color: rgb(255, 255, 255);
+  font-size: 1rem;
+  border-radius: 3px;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  transition: 0.5s;
+  box-shadow: 10px 10px 10px 10px rgb(0 0 0 / 10%), 0 5px 5px 0 rgb(0 0 0 / 10%) !important;
+  z-index: 2;
+  line-height: 0px;
+}
+
+.PDF:hover {
+  color: #08fdd8;
+  opacity: 1;
+  cursor: pointer;
+}
+
+/* Sidebar */
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #181818;
+  height: 100vh;
+  z-index: 2;
+}
+
+.links {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  border-top: 1px solid #282828;
+  border-bottom: 1px solid #282828;
+  a {   
+    color: #909096;
+    margin-top: 25px;
+    margin-bottom: 25px;
+    text-decoration: none;
+    transition: 0.2s;
+  }
+  a:hover {
+    color: #EE1D52;
+  }
+}
+
+.menu-icons {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  height: 10rem;
+  align-items: center;
+  justify-content: space-evenly;
+  img {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+/* Tags */
+
+.tags {
+  margin-left: 150px;
+  color: #515152;
+  position: absolute;
+  bottom: 0;
+  left: 4rem;
+  font-style: italic;
+  font-size: 1.5rem;
+  font-family: 'La Belle Aurore',cursive;
+}
+
+.top-tags {
+  bottom: auto;
+  top: 2rem;
+}
+
+.top-tags:after {
+  content: '<body>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 1.5rem;
+  position: absolute;
+  margin-top: 2rem;
+  margin-left: -2rem;
+}
+
+.bottom-tags {
+  bottom: 2rem;
+  top: auto;
+}
+
+.bottom-tags:before {
+  content: '</body>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 1.5rem;
+  position: absolute;
+  margin-left: 2.9rem;
+  margin-top: -2rem;
+}
+
+/* Phone settings */
+
+@media (max-width: 1024px) {
+  .content{
+    overflow-x: auto;
+  }
+  .row {
+    flex-direction: column;
+  }
+  .sidebar {
+    height: 80px;
+    width: 100%;
+    z-index: 3;
+    background-color: #1D1D1D;
+  }
+  .links {
+    justify-content: space-around;
+    flex-direction: row;
+    border-top: none;
+    a {
+      margin-top: 25px;
+      margin-bottom: 25px;
+    }
+  }
+  .home {
+    flex-direction: column !important; 
+  }
+  .tags {
+    display: none;
+  }
+  .menu-photo{
+    display: none;
+  }
+  .menu-icons {
+    display: none;
+  }
+  .PDF {
+    height: 60px;
+    width: 100px;
+    font-size: 0.8rem;
+}
+  a {
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+
+}

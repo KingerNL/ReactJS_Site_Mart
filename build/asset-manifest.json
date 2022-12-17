@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.f93c797c.css",
+    "main.js": "/static/js/main.a3a0f3d5.js",
+    "static/media/wotfard-regular-webfont.ttf": "/static/media/wotfard-regular-webfont.b7585f8e119628c4dfb2.ttf",
+    "static/media/M_logo.svg": "/static/media/M_logo.2b105707aeb456a368df59153d73e251.svg",
+    "static/media/Mart_Veldkamp.pdf": "/static/media/Mart_Veldkamp.f33b311671a75e56e7f3.pdf",
+    "static/media/Project1.webp": "/static/media/Project1.1123233a17b9ec957731.webp",
+    "static/media/Airplane.webp": "/static/media/Airplane.24ef8fc43e9eed48f307.webp",
+    "static/media/Project3.webp": "/static/media/Project3.cb8a87daea034ffca21f.webp",
+    "static/media/Project2.webp": "/static/media/Project2.99c608f42f73a07f7a9c.webp",
+    "static/media/Github.svg": "/static/media/Github.68420244614561a19d1c63b501fc4d1c.svg",
+    "index.html": "/index.html",
+    "static/media/LinkedIn.svg": "/static/media/LinkedIn.3e2bb2c8a803795c124ccbac5183f4c3.svg",
+    "main.f93c797c.css.map": "/static/css/main.f93c797c.css.map",
+    "main.a3a0f3d5.js.map": "/static/js/main.a3a0f3d5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f93c797c.css",
+    "static/js/main.a3a0f3d5.js"
+  ]
+}

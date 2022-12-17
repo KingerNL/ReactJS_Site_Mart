@@ -1,0 +1,91 @@
+
+
+.home_about{
+    width: 100%;
+    height: 100%;
+    margin-left: 175px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+  }
+
+.about_text{
+  width: 40%;
+  margin-left: 9vh;
+  margin-right: 9vh;
+  p {
+      position: relative;
+      margin: 1.5rem 0;
+      font-size: 1.4rem;
+  }
+  h2 {
+      line-height: 9vh;
+      font-family: 'Lobster', cursive;
+      color: #08fdd8;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      margin-bottom: 40px;
+      left: -10px;
+      font-size: 5rem;
+  }
+}
+
+.about_lottie {
+  height: 400px;
+}
+
+.about_text p:first-of-type:before {
+  content: '<p>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  margin-top: -1.5rem;
+  left: -2rem;
+  }
+
+.about_text p:last-of-type:after {
+  content: '<p/>';
+  font-family: 'La Belle Aurore',cursive;
+  color: #515152;
+  font-size: 18px;
+  position: absolute;
+  left: -2rem;
+  bottom: -2rem;
+}
+
+.about_image {
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+}
+
+/* Phone settings */
+
+@media (max-width: 1024px) {
+  .home_about {
+    margin-left: 0px;
+    flex-direction: column;
+    overflow-y: scroll;
+  }
+  .about_text {
+    margin-top: 150px;
+    width: 80%;
+    margin-left: 0;
+    margin-right: 0;
+    h2 {
+      font-size: 4rem;
+    }
+    p {
+      font-size: 1rem;
+    }
+  }
+  .about_lottie {
+    height: stretch;
+    margin-bottom: 20px;
+  }
+}

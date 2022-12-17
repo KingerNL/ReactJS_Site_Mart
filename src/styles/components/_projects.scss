@@ -1,0 +1,313 @@
+
+/* Projects */
+
+.projects {
+    width: 60%;
+    margin-top: 5%;
+    margin-left: 15%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    z-index: 1;
+    position: fixed;
+    button {
+        background-color: #2a2a2a;
+        width: 100%;
+        height: 140px;
+        border-radius: 10px;
+        border-color: rgb(202, 202, 202);
+        color: white;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 3vh;
+    }
+
+    .koptekst {
+        display: flex;
+        flex-direction: row;
+        h2 {
+            font-family: "Lobster", cursive;
+            font-weight: 400;
+            font-size: 4rem;
+            margin-top: 5px;
+        }
+        h1 {
+            font-family: "Lobster", cursive;
+            color: #08fdd8;
+            font-size: 5rem;
+            font-weight: 400;
+            margin-top: 0;
+        }
+    }
+}
+
+.Modals {
+    cursor: pointer;
+    border: none;
+    box-shadow: 0 10px 16px 0 rgb(0 0 0 / 20%), 0 6px 20px 0 rgb(0 0 0 / 19%);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    transition: 0.3s;
+    padding: 0px 0px 0px 0px;
+    margin-bottom: 5%;
+    img {
+        margin-left: 0px;
+        height: 140px;
+        width: 187px;
+        border-radius: 10px 0px 0px 10px;
+    }
+    
+}
+
+.Modals:hover{
+    box-shadow: none;
+    background-color: #313131;
+    p {
+        border-bottom: 1px solid white;
+    }
+
+}
+
+.Modals:last-of-type{
+    margin-bottom: 0%;
+}
+
+.Modal_Inner {
+    display:flex;
+    flex-direction: row;
+}
+
+
+.Modal_Inner2 {
+    display:flex;
+    flex-direction: row-reverse;
+    align-items: flex-end;
+    .Modal_Lottie {
+        width: 200px;
+        height: 200px;
+        object-fit: contain;
+    }
+}
+
+
+
+.Modal_Info {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    p {
+        margin-top: 5px;
+        margin-bottom: 10px;
+        margin-left: 10%; 
+        margin-right: 10%;
+        border-bottom: 1px dashed white;
+        transition: 0.3s;
+        height: 40px;
+    }
+    .p2 {
+        font-size: 1rem;
+        color: rgba(255, 255, 255, 0.6901960784);
+        text-align: left;
+        margin: 10px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+}
+
+.background {
+    position: fixed;
+    top: 0;
+    left: 175px;
+    width: 90%;
+    height: 100%;
+    z-index: 0;
+    opacity: 0.8;
+    .vierkant {
+        position: absolute;
+        left: 1550px;
+        top: 300px;
+        height: 180px;
+        width: 180px;
+        background-color: #FBBC04;
+    }
+    .vierkant1 {
+        position: absolute;
+        left: 600px;
+        top: 1000px;
+        height: 180px;
+        width: 180px;
+        background-color: #E5443F;
+    }
+    .vierkant2 {
+        position: absolute;
+        left: 700px;
+        top: 750px;
+        height: 150px;
+        width: 150px;
+        background-color: #4285F4;
+    }
+    .cirkel1 {
+        position: absolute;
+        left: 1250px;
+        top: 30px;
+        height: 200px;
+        width: 200px;
+        background-color: #34A853;
+        border-radius: 50%;
+    }
+    .cirkel2 {
+        position: absolute;
+        left: 260px;
+        top: 750px;
+        height: 50px;
+        width: 50px;
+        background-color: #E5443F;
+        border-radius: 50%;
+    }
+    .cirkel3 {
+        position: absolute;
+        left: 550px;
+        top: 50px;
+        height: 150px;
+        width: 150px;
+        background-color: #FBBC04;
+        border-radius: 50%;
+    }
+    .cirkel4 {
+        position: absolute;
+        left: 750px;
+        top: 1600px;
+        height: 250px;
+        width: 250px;
+        background-color: #34A853;
+        border-radius: 50%;
+    }
+    .cirkel5 {
+        position: absolute;
+        left: 250px;
+        top: 1100px;
+        height: 100px;
+        width: 100px;
+        background-color: #34A853;
+        border-radius: 50%;
+    }
+    .cirkel6 {
+        position: absolute;
+        left: -50px;
+        top: 300px;
+        height: 100px;
+        width: 100px;
+        background-color: #E5443F;
+        border-radius: 50%;
+    }
+    .driehoek2{
+        position: absolute;
+        left: 255px;
+        top: 700px;
+        width: 0;
+        height: 0;
+        border-left: 60px solid transparent;
+        border-right: 60px solid transparent;
+        border-bottom: 50px solid #FBBC04;
+    }
+    .driehoek {
+        position: absolute;
+        left: 1600px;
+        top: 770px;
+        width: 0;
+        height: 0;
+        border-left: 150px solid transparent;
+        border-right: 150px solid transparent;
+        border-bottom: 140px solid #34A853;
+    }
+    .driehoek1 {
+        position: absolute;
+        left: 100px;
+        top: 1850px;
+        width: 0;
+        height: 0;
+        border-left: 250px solid transparent;
+        border-right: 250px solid transparent;
+        border-bottom: 240px solid #4285F4;
+    } 
+    .rechthoek {
+        position: absolute;
+        left: 200px;
+        top: 180px;
+        height: 200px;
+        width: 100px;
+        background-color: #4285F4;
+    }
+    .rechthoek1 {
+        position: absolute;
+        left: 250px;
+        top: 1300px;
+        height: 300px;
+        width: 150px;
+        background-color: #FBBC04;
+    }
+    .rechthoek2 {
+        position: absolute;
+        left: 800px;
+        top: 200px;
+        height: 150px;
+        width: 300px;
+        background-color: #E5443F;
+        transform: skew(20deg);
+    }
+}
+
+
+/* Phone settings */
+
+@media (max-width: 1024px) {
+    .background {
+        display: none;
+    }
+    .projects {
+        width: 90%;
+        margin-left: 5%;
+        button {
+            height: 17vh;
+        }
+        img {
+            display: none;
+        }
+        .Modal_Info{
+            align-items: center;
+            p {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 1.2rem;
+                margin-bottom: 0px;
+                height: 30px;
+                margin-top: 10px;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+            .p2 {
+                font-size: 0.8rem;
+                width: 95%;
+                margin-left: 5%;
+                margin-right: 5%;
+            }
+        }
+
+        h2 {
+            display: none;
+        }
+        .koptekst {
+            h1 {
+                font-size: 3rem;
+            }
+        }
+
+    }
+
+
+}
