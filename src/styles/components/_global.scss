@@ -10,12 +10,20 @@
   font-display: fallback;
 }
 
+*{
+  -ms-overflow-style: none;
+}
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   background-color: $background;
   color: $white;
   font-size: x-large;
   margin: 0;
   font-family: 'Wotfard';
+  overflow-x: hidden;
 }
 
 .content {
@@ -88,51 +96,45 @@ body {
   cursor: pointer;
 }
 
-/* Sidebar */
-
-.sidebar {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
-  background-color: #181818;
-  height: 100vh;
-  z-index: 2;
+/* Orbs */
+.red_orb {
+  width: min(500px, 100%);
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  z-index: 1;
+  top: max(880px, -50vw);
+  right: max(-220px, -50vw);
+  border-radius: 50%;
+  background-color: rgb(250, 250, 250);
+  filter: blur(4px);
+  box-shadow: rgb(250 250 250) 0px 0px 100px -30px inset, rgb(255 109 109) 0px 0px 30vw 30vw inset, rgb(255 109 109) 0px 0px 120px 80px;
 }
 
-.links {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  flex-direction: column;
-  border-top: 1px solid #282828;
-  border-bottom: 1px solid #282828;
-  a {   
-    color: #909096;
-    margin-top: 25px;
-    margin-bottom: 25px;
-    text-decoration: none;
-    transition: 0.2s;
-  }
-  a:hover {
-    color: #EE1D52;
-  }
+.yellow_orb {
+  width: max(240px, 20vw);
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  z-index: 1;
+  top: max(1500px, -50vw);
+  left: max(-50px, -50vw);
+  border-radius: 50%;
+  background-color: rgb(250, 250, 250);
+  filter: blur(4px);
+  box-shadow: rgb(250, 250, 250) 0px 0px 100px -40px inset, rgb(255, 183, 75) 0px 0px max(60px, 6vw) max(60px, 6vw) inset, rgb(255, 183, 75) 0px 0px 70px 40px;
 }
 
-.menu-icons {
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  flex-wrap: wrap;
-  height: 10rem;
-  align-items: center;
-  justify-content: space-evenly;
-  img {
-    width: 24px;
-    height: 24px;
-  }
+.green_orb {
+  width: min(576px, 40vw);
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  z-index: 1;
+  top: max(1800px, -50vw);
+  right: -20vw;
+  border-radius: 50%;
+  background-color: rgb(250, 250, 250);
+  filter: blur(4px);
+  box-shadow: rgb(250, 250, 250) 0px 0px 100px -40px inset, rgb(136, 223, 171) 0px 0px max(70px, 12vw) max(70px, 12vw) inset, rgb(136, 223, 171) 0px 0px 70px 40px;
+  opacity: 0.8;
 }
 
 /* Tags */
@@ -181,26 +183,14 @@ body {
 /* Phone settings */
 
 @media (max-width: 1024px) {
+  body{
+    width: 100% !important;
+  }
   .content{
-    overflow-x: auto;
+    overflow-x: hidden;
   }
   .row {
     flex-direction: column;
-  }
-  .sidebar {
-    height: 80px;
-    width: 100%;
-    z-index: 3;
-    background-color: #1D1D1D;
-  }
-  .links {
-    justify-content: space-around;
-    flex-direction: row;
-    border-top: none;
-    a {
-      margin-top: 25px;
-      margin-bottom: 25px;
-    }
   }
   .home {
     flex-direction: column !important; 

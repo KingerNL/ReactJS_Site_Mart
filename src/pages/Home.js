@@ -1,82 +1,40 @@
-// import React, { useEffect, useState } from "react"
-import { motion } from "framer-motion"
-import Lottie from 'react-lottie';
-import Animated_M from '../lotties/Animated_M.json';
-
-const line1 = "Hi,"
-const line2 = "I'm Mart"
-const line3 = "Engineer."
-
-const sentence = {
-    hidden: { opacity: 1},
-    visible: {
-        opacity: 1,
-        transition: {
-            delay: 0.5,
-            staggerChildren: 0.09,
-        },
-    },
-}
-
-const letter = {
-    hidden: { opacity: 0, rotate: 250},
-    visible: { opacity: 1, rotate: 360 },
-}
+// import Lottie from 'react-lottie';
+// import Animated_M from '../lotties/Animated_M.json';
+import HomeText from "./Home_elements/HomeText";
+// import ReactAnime  from 'react-animejs'
+// import {motion} from 'framer-motion'
 
 function Home() {
 
-    const defaultOptions = {
-        loop: false,
-        autoplay: true,
-        animationData: Animated_M,
-        rendererSettings: {
-          preserveAspectRatio: "xMidYMid slice"
-        }
-      };
+  // const defaultOptions = {
+  //     loop: false,
+  //     autoplay: true,
+  //     animationData: Animated_M,
+  //     rendererSettings: {
+  //       preserveAspectRatio: "xMidYMid slice"
+  //     }
+  // };
 
-    return(
+  const style_background = {
+    right: "-676px",
+    maxWidth: "calc(230vw + 1670px)"
+  };
+
+  return (
+    <div>
         <div className="home">
-            <span className="tags top-tags"> &lt;html&gt; </span>
-            <span className="tags bottom-tags"> &lt;/html&gt; </span> 
-                <div className="hometext">
-                    <motion.h1
-                        className="load-screen--message"
-                        variants={sentence}
-                        initial= "hidden"
-                        animate= "visible">
-                        {line1.split("").map((word, index) => {
-                          return (
-                            <motion.span key={word + "-" + index} variants={letter} whileHover={{ transition:{duration: 0.2, type: "spring", stiffness: 600}, scale: 1.3}} style={{ display: "inline-block" }}>
-                                {word}
-                            </motion.span>
-                          )
-                        })}
-                        <br />
-                        {line2.split("").map((word, index) => {
-                          return (
-                            <motion.span className={`letter ${word === ' ' ? 'space' : ''}`} key={word + "-" + index} variants={letter} whileHover={{ transition:{duration: 0.2, type: "spring", stiffness: 600}, scale: 1.3}} style={{ display: "inline-block" }}>
-                                {word}
-                            </motion.span>
-                          )
-                        })}
-                        <br />
-                        {line3.split("").map((word, index) => {
-                          return (
-                            <motion.span 
-                            key={word + "-" + index} 
-                            variants={letter} 
-                            style={{ display: "inline-block" }} 
-                            whileHover={{ transition:{duration: 0.2, type: "spring", stiffness: 600}, scale: 1.3}}>
-                                {word}
-                            </motion.span>
-                          )
-                        })}
-                    </motion.h1>
-                </div>
-                <div><Lottie options={defaultOptions}/>
-            </div>
-        </div>
-    )
+          {/* <span className="tags top-tags"> &lt;html&gt; </span>
+          <span className="tags bottom-tags"> &lt;/html&gt; </span>  */}
+          <picture>
+            <source media='(max-width:768px)' type='images/webp' srcSet='https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp' />
+            <source media={"(min-width: 1280px)"} type="image/webp" srcSet="https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp 1x, https://github.githubassets.com/images/modules/site/home-campaign/hero-bg-2x.webp 2x"></source>
+            <img alt='planet background' aria-hidden="true" width="4377" className="home_background" style={style_background} src="https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp"></img>
+          </picture>
+          <HomeText/>
+          {/* <div><Lottie options={defaultOptions}/></div> */}
+      </div>
+    </div>
+  )
 }
 
 

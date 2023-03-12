@@ -1,14 +1,15 @@
 
 
 .skills_container{
-    height: 100%;
+    height: 100vh;
     display: flex;
     flex-direction: row;
-    position: fixed;
+    position: relative;
     align-items: center;
+    background-color: #1B1A22;
     svg {
         position: absolute;
-        z-index: -1;
+        z-index: 0;
         opacity: 0.41;
     }
   }
@@ -19,29 +20,29 @@
     flex-direction: column;
     word-wrap: break-word;
     p {
-        font-family: 'Montserrat', sans-serif;
-        position: relative;
-        margin: 1rem 0;
-        font-size: 1.2rem;
-        line-height: 1.5rem;
+      font-family: 'Montserrat', sans-serif;
+      position: relative;
+      margin: 1rem 0;
+      font-size: 1.2rem;
+      line-height: 1.5rem;
     }
     h2 {
-        line-height: 9vh;
-        font-family: "Lobster", cursive;
-        color: #08fdd8;
-        font-weight: 400;
-        margin-top: 0;
-        position: relative;
-        left: -10px;
-        font-size: 5rem;
-        margin: 0;
+      line-height: 9vh;
+      font-family: "Lobster", cursive;
+      color: #08fdd8;
+      font-weight: 400;
+      margin-top: 0;
+      position: relative;
+      left: -10px;
+      font-size: 5rem;
+      margin: 0;
     }
     a {
         color: #08fdd8;
     }
     a:hover{
-        color: #EE1D52;
-        transition: 0.5s;
+      color: #EE1D52;
+      transition: 0.5s;
     }
     ul {
       margin-top: 0;
@@ -54,8 +55,8 @@
         margin-top: -1.5rem;
         left: -2rem;
         }
-    
-    p:last-of-type:after {
+      
+      p:last-of-type:after {
         content: '';
         font-family: 'La Belle Aurore',cursive;
         color: #515152;
@@ -63,7 +64,7 @@
         position: absolute;
         left: -2rem;
         bottom: -2rem;
-    }
+      }
     }
     li {
       margin-top: 10px;
@@ -73,6 +74,7 @@
 .svg_background {
   width: 100%;
   height: 100%;
+  position: fixed;
 }
 
 .skills_text p:first-of-type:before {
@@ -114,6 +116,8 @@
   height: auto;
   justify-content: space-between;
   margin-top: 5rem;
+  position: relative;
+  z-index: 1;
 }
 
 .skills_box{
@@ -145,6 +149,7 @@
 }
 
 .content_skills{
+  z-index: 2;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -221,7 +226,6 @@
   to { width: 75%; }
 }
 
-
 @keyframes w50 {
   from { width: 0%; }
   to { width: 68%; }
@@ -244,6 +248,7 @@
 @media (max-width: 1024px) {
   .skills_container {
     flex-direction: column;
+    height: auto;
     overflow: scroll;
   }
   .content_skills {
@@ -272,6 +277,7 @@
     flex-direction: column;
     margin: 0;
     align-items: center;
+
   }
   .skills_box {
     margin-bottom: 25px;

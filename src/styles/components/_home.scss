@@ -1,20 +1,40 @@
 /* Home page */
 
 .home {
-    height: 100vh;
+  position: relative;
+  height: 100vh;
+  height: 100dvh;
+  overflow: hidden;
+  margin: 0px;
+  margin-bottom: 20vh;
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
+    background-color: transparent;
   }
-  
+
+  .home_background {
+    pointer-events: none;
+    top: 0 !important;
+    position: absolute !important;
+    border-style: none;
+    z-index: 0;
+    box-sizing: border-box;
+    overflow-clip-margin: content-box;
+    overflow: clip;
+  }
+
+  /* HomeText */
+
   .hometext {
     display: flex;
     align-items: flex-start;
     flex-direction: column;
     justify-content: center;
-    margin-left: 5%;
     height: 100%;
+    margin-bottom: 30vh;
+    margin-left: 20vh;
     cursor: default;
     h1 {
       color: #fff;
@@ -39,7 +59,9 @@
 @media (max-width: 1400px) {
   .home {
     .hometext {
-      margin-left: 2%;
+      margin-top: 20vh;
+      margin-right: 5vh;
+      width: 40vh;
       h1 {
         font-size: 4.5rem;
       }
@@ -50,9 +72,9 @@
 
 @media (max-width: 1024px) {
   .home {
-    height: 100%;
-    .hometext {
-      margin-top: 10px;
+    position: initial;
+    height: auto;
+  .hometext {
       h1 {
         font-size: 3rem;
         line-height: 4rem;

@@ -33,7 +33,7 @@ function Projects() {
         rendererSettings: {
           preserveAspectRatio: "xMidYMid slice"
         }
-      };
+    };
 
     const [show, setShow] = useState();
     const constraintsRef = useRef(null);
@@ -73,45 +73,6 @@ function Projects() {
                     <h1>&nbsp; Mijn Projecten &nbsp; </h1>
                     <motion.h2 animate={{ rotate: 10 }}> 💻</motion.h2>
                 </div>
-
-                <button className="Modals" onClick={() => setShow({ id: 1 })}>
-                    <img src={Project1} alt="vliegtuig" />
-                    <div className="Modal_Info">
-                        <p>3D Printed RC vliegtuig</p>
-                        <div className="p2">Hier staat wat informatie over mijn zelfgemaakte ge-3D printen RC vliegtuig.</div>
-                    </div>
-                </button>
-                <Modal title="3D Printed RC vliegtuig" show={show?.id === 1} onClose={() => setShow(false)}>
-                    <div className="Modal_Inner">
-                        <div className="Modal_webp"><img src={Airplane_webp} alt="een vliegtuig"/></div>
-                        <p>Coming soon...</p>
-                    </div>
-                    <div className="Modal_Inner2">
-                        <div className="Modal_Lottie"><Lottie options={defaultOptions}/></div>
-                    </div>
-                   </Modal>
-
-                <button className="Modals" onClick={() => setShow({ id: 2 })}>
-                    <img src={Project2} alt="zebrapaden" />
-                    <div className="Modal_Info">
-                        <p>Zebrapaden classificeren</p>
-                        <div className="p2">Voor een project moest ik in een groepje zebrapaden classificeren door middel van Computer Vision.</div>
-                    </div>
-                </button>
-                <Modal title="Zebrapaden classificeren" show={show?.id === 2} onClose={() => setShow(false)}>
-                    <p>Coming soon...</p>
-                </Modal>
-
-                <button className="Modals" onClick={() => setShow({ id: 3 })}>
-                    <img src={Project3} alt="C++ code" />
-                    <div className="Modal_Info">
-                        <p>C++ basic OS</p>
-                        <div className="p2">Voor school moest ik een super basic Operating system maken in C++ dat hardware kon aansturen en .txt kon uitlezen.</div>
-                    </div>
-                </button>
-                <Modal title="C++ basic OS" show={show?.id === 3} onClose={() => setShow(false)}>
-                    <p>Coming soon...</p>
-                </Modal>
             </motion.div>
         </>
     )
