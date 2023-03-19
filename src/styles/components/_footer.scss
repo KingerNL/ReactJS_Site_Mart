@@ -53,3 +53,13 @@
     --myColor2: #ff6d6da2;
     opacity: 1;
 }
+
+@media (max-width: 768px) {
+    .footer {
+        display: none;
+        // flex-direction: column;
+        // align-content: center;
+        // margin-top: 3rem;
+        // margin-left: 0;
+    }
+}
