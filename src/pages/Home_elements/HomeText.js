@@ -32,7 +32,7 @@ export default function HomeText() {
             animate= "visible">
             {line1.split("").map((word, index) => {
             return (
-                <motion.span key={word + "-" + index} variants={letter} whileHover={{ transition:{duration: 0.2, type: "spring", stiffness: 600}, scale: 1.3}} style={{ display: "inline-block" }}>
+                <motion.span shouldOptimize={true} key={word + "-" + index} variants={letter} whileHover={{ transition:{duration: 0.2, type: "spring", stiffness: 600}, scale: 1.3}} style={{ display: "inline-block" }}>
                     {word}
                 </motion.span>
             )
@@ -40,7 +40,7 @@ export default function HomeText() {
             <br />
             {line2.split("").map((word, index) => {
             return (
-                <motion.span className={`letter ${word === ' ' ? 'space' : ''}`} key={word + "-" + index} variants={letter} whileHover={{ transition:{duration: 0.2, type: "spring", stiffness: 600}, scale: 1.3}} style={{ display: "inline-block" }}>
+                <motion.span shouldOptimize={true} className={`letter ${word === ' ' ? 'space' : ''}`} key={word + "-" + index} variants={letter} whileHover={{ transition:{duration: 0.2, type: "spring", stiffness: 600}, scale: 1.3}} style={{ display: "inline-block" }}>
                     {word}
                 </motion.span>
             )
@@ -48,7 +48,7 @@ export default function HomeText() {
             <br />
             {line3.split("").map((word, index) => {
             return (
-                <motion.span 
+                <motion.span shouldOptimize={true}
                 key={word + "-" + index} 
                 variants={letter} 
                 style={{ display: "inline-block" }} 

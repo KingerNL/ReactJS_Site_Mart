@@ -38,10 +38,10 @@ export default function App() {
   const difference = y - height/2;
 
     return (
-        <div style={{overflowX: 'hidden'}}>
-          <motion.div style={{y: difference/8}} className="red_orb"></motion.div>
-          <motion.div style={{y: difference/3}} className="yellow_orb"></motion.div>
-          <motion.div style={{y: difference/5}} className="green_orb"></motion.div>
+        <div className="background_objects">
+            <motion.div shouldOptimize={true} style={{y: difference/5}} className="green_orb"></motion.div>
+            <motion.div shouldOptimize={true} style={{y: difference/3}} className="yellow_orb"></motion.div>
+            <motion.div shouldOptimize={true} style={{y: difference/8}} className="red_orb"></motion.div>
           <Home />
           <About />
           <Skills />

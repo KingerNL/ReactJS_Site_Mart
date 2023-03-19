@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/static/css/main.7e10a4b4.css",
-    "main.js": "/static/js/main.da5480f6.js",
+    "main.css": "/static/css/main.f4d9c7fa.css",
+    "main.js": "/static/js/main.63595da2.js",
     "static/media/wotfard-regular-webfont.ttf": "/static/media/wotfard-regular-webfont.b7585f8e119628c4dfb2.ttf",
     "static/media/Mart_Veldkamp.pdf": "/static/media/Mart_Veldkamp.7f502c63674e7e7d8874.pdf",
     "index.html": "/index.html",
-    "main.7e10a4b4.css.map": "/static/css/main.7e10a4b4.css.map",
-    "main.da5480f6.js.map": "/static/js/main.da5480f6.js.map"
+    "main.f4d9c7fa.css.map": "/static/css/main.f4d9c7fa.css.map",
+    "main.63595da2.js.map": "/static/js/main.63595da2.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e10a4b4.css",
-    "static/js/main.da5480f6.js"
+    "static/css/main.f4d9c7fa.css",
+    "static/js/main.63595da2.js"
   ]
 }

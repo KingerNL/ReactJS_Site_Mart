@@ -7,6 +7,8 @@
   overflow: hidden;
   margin: 0px;
   margin-bottom: 20vh;
+  display: -webkit-flex; /* Safari 8 */
+  display: -ms-flexbox; /* IE 10 */
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -14,16 +16,16 @@
     background-color: transparent;
   }
 
-  .home_background {
-    pointer-events: none;
-    top: 0 !important;
-    position: absolute !important;
-    border-style: none;
-    z-index: 0;
-    box-sizing: border-box;
-    overflow-clip-margin: content-box;
-    overflow: clip;
-  }
+.home_background {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  background-image: url('https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp'); /* Fallback for browsers that don't support clip-path */
+  background-size: cover;
+  background-position: center center;
+  border-style: none;
+  position: absolute !important;
+  top: 0 !important;
+  z-index: 0;
+}
 
   /* HomeText */
 
@@ -56,32 +58,14 @@
 
   /* Phone settings */
 
-@media (max-width: 1400px) {
+@media (max-width: 768px) {
   .home {
     .hometext {
-      margin-top: 20vh;
-      margin-right: 5vh;
-      width: 40vh;
+      margin-left: 0;
       h1 {
-        font-size: 4.5rem;
+        font-size: 10vh;
       }
     }
   }
 }
 
-
-@media (max-width: 1024px) {
-  .home {
-    position: initial;
-    height: auto;
-  .hometext {
-      h1 {
-        font-size: 3rem;
-        line-height: 4rem;
-      }
-    }
-  }
-  .space{
-    padding-right: 0.3em;
-  }
-}
