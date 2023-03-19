@@ -110,10 +110,10 @@ body {
   position: absolute;
   aspect-ratio: 1 / 1;
   z-index: 1;
-  top: -webkit-max(880px, -50vw);
-  top: max(880px, -50vw);
-  right: -webkit-max(220px, -50vw);
-  right: max(-220px, -50vw);
+  top: -webkit-max(2600px, -50vw);
+  top: max(2600px, -50vw);
+  opacity: 0.8;
+  right: -15vw;
   border-radius: 50%;
   background-color: rgb(250, 250, 250);
   filter: blur(4px);
@@ -142,14 +142,29 @@ body {
   position: absolute;
   aspect-ratio: 1 / 1;
   z-index: 1;
-  top: -webkit-max(1800px, -50vw);
-  top: max(1800px, -50vw);
-  right: -20vw;
+  top: -webkit-max(1100px, -50vw);
+  top: max(1100px, -50vw);
+  right: -5vw;
   border-radius: 50%;
   background-color: rgb(250, 250, 250);
   filter: blur(4px);
   box-shadow: rgb(250, 250, 250) 0px 0px 100px -40px inset, rgb(136, 223, 171) 0px 0px max(70px, 12vw) max(70px, 12vw) inset, rgb(136, 223, 171) 0px 0px 70px 40px;
   opacity: 0.8;
+}
+
+.blue_orb {
+  width: -webkit-min(400px, 100%);
+  width: min(400px, 100%);
+  position: absolute;
+  aspect-ratio: 1 / 1;
+  z-index: 1;
+  bottom: 40vw;
+  right: 85vw;
+  border-radius: 50%;
+  opacity: 0.6;
+  background-color: rgb(250, 250, 250);
+  filter: blur(4px);
+  box-shadow: rgb(250, 250, 250) 0px 0px 100px -40px inset, rgb(86, 154, 255) 0px 0px max(70px, 8vw) max(70px, 8vw) inset, rgb(86, 154, 255) 0px 0px 70px 40px;
 }
 
 /* Tags */

@@ -1,9 +1,10 @@
 import { useEffect, useState } from "react";
+import { motion } from "framer-motion";
 import "./styles/main.scss"
 import Home from "./pages/Home";
 import About from "./pages/About";
 import Skills from "./pages/Skills"
-import { motion } from "framer-motion";
+import Footer from "./pages/Footer";
 // import Github from './Images/Github.svg';
 // import LinkedIn from './Images/LinkedIn.svg';
 // import Projects from "./pages/Projects";
@@ -40,11 +41,13 @@ export default function App() {
     return (
         <div className="background_objects">
             <motion.div shouldOptimize={true} style={{y: difference/5}} className="green_orb"></motion.div>
-            <motion.div shouldOptimize={true} style={{y: difference/3}} className="yellow_orb"></motion.div>
-            <motion.div shouldOptimize={true} style={{y: difference/8}} className="red_orb"></motion.div>
+            <motion.div shouldOptimize={true} style={{y: difference/2.5}} className="yellow_orb"></motion.div>
+            <motion.div shouldOptimize={true} style={{y: difference/4}} className="red_orb"></motion.div>
+            <motion.div shouldOptimize={true} style={{y: difference/8}} className="blue_orb"></motion.div>
           <Home />
           <About />
           <Skills />
+          <Footer />
           <a href={cv} download="Mart_Veldkamp.pdf">
             <div className="PDF">
               <p>Meer weten?</p>

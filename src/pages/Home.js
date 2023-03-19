@@ -31,7 +31,6 @@ function Home() {
             <img alt='planet background' aria-hidden="true" width="4377" className="home_background" style={style_background} src="https://github.githubassets.com/images/modules/site/home-campaign/hero-bg.webp"></img>
           </picture>
           <HomeText/>
-          {/* <div><Lottie options={defaultOptions}/></div> */}
       </div>
     </div>
   )
