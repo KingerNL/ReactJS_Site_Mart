@@ -1,41 +1,14 @@
-import React, { useEffect } from "react";
-import { useAnimation, motion } from "framer-motion";
-import { useInView } from "react-intersection-observer";
-// import Lottie from 'react-lottie';
-// import Wave_animation from '../lotties/Me_Wave_Animation.json';
-
-
 
 export default function About() {
 
-    const  {ref, inView} = useInView();
-    const animation = useAnimation();
-
-
-
-    useEffect(() => {
-        if(inView) {
-            animation.start({
-                x: 0,
-            });
-        }
-        if(!inView) {
-            animation.start({x: '-100vw'})
-        }
-    // eslint-disable-next-line
-    }, [inView]);
-
     return (
-    <div ref={ref} className="home_about">
-        <motion.div className="about_text">
-            <motion.h2> Me, Myself &amp; I</motion.h2>
-            <motion.p> Hoewel ik Mechatronica &amp; Robotica studeer. Begon ik als Mechanical Engineer, ik kon in het 3e jaar van me studie een afstudeerrichting kiezen, en had gekozen voor Mechatronica &amp; Robotica. Daarnaast als hobby vind ik front-end web development ook super leuk. (Daarom ook deze site 😉)</motion.p>
-            <motion.p> ✨ 4e Jaars Mechatronica &amp; Robotica student aan de HvA ✨. Ik vind klimmen/boulderen super leuk om te doen. Daarnaast loop ik ook veel hard (vooral 5 of 13km). 🏃‍💨 </motion.p>
-            <motion.p> Wat me momenteel erg interreseert is 🦾embedded systems🦾 gecombineerd met 🧠computer vision / AI🧠.</motion.p>
-        </motion.div>
-        {/* <div className="about_lottie">
-            <Lottie options={defaultOptions}/>
-        </div> */}
+    <div className="home_about">
+        <div className="about_text">
+            <h2> Me, Myself &amp; I</h2>
+            <p> Although I am studying mechatronics &amp; robotics, I began as a Mechanical Engineer. In the third year of my studies, I was able to choose a major, and I chose Mechatronics &amp; Robotics. In addition to my hobby, I enjoy front-end web development (hence the existence of this website 😉).</p>
+            <p> ✨ 4th year mechatronics &amp; robotics student at the HvA ✨. In my free time I like to go bouldering and running (mostly 5 of 10km). 🏃‍💨 </p>
+            <p> Currently I'm interested in 🦾robotics🦾 combined with 🧠computer vision / AI🧠.</p>
+        </div>
     </div>
     )
 }

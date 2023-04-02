@@ -60,12 +60,13 @@
 
 @media (max-width: 768px) {
   .home {
+    margin-bottom: 0vh;
     .hometext {
-      margin-left: 0;
-      h1 {
-        font-size: 10vh;
+        margin-left: 0;
+        h1 {
+          font-size: 10vh;
+        }
       }
-    }
   }
 }
 

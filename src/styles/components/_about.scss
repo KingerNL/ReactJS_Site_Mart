@@ -1,13 +1,14 @@
 
 .home_about{
-    height: 70vh;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    overflow-x: hidden;
-    align-items: center;
-    background: linear-gradient(#0D1116, #1B1A22);
-  }
+  height: 70vh;
+  height: 70dvh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  overflow-x: hidden;
+  align-items: center;
+  background: linear-gradient(#0D1116, #1B1A22);
+}
 
 .about_text{
   width: 60%;
@@ -15,9 +16,11 @@
   margin-right: 3vh;
   z-index: 2;
   p {
+      font-family: 'Montserrat', sans-serif;
       position: relative;
       margin: 1.5rem 0;
       font-size: 1.4rem;
+      line-height: 2.8vh;
   }
   h2 {
       line-height: 9vh;
@@ -32,9 +35,6 @@
   }
 }
 
-.about_lottie {
-  height: 400px;
-}
 
 .about_text p:first-of-type:before {
   content: '<p>';
@@ -54,13 +54,6 @@
   position: absolute;
   left: -2rem;
   bottom: -2rem;
-}
-
-.about_image {
-  width: 100%;
-  object-fit: contain;
-  display: flex;
-  justify-content: center;
 }
 
 /* Phone settings */
