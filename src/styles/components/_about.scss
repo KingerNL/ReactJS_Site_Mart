@@ -1,7 +1,7 @@
 
 .home_about{
   height: 70vh;
-  height: 70dvh;
+  height: 70lvh;
   position: relative;
   display: flex;
   justify-content: center;
@@ -60,7 +60,8 @@
 
 @media (max-width: 768px) {
   .home_about {
-    height: auto;
+    height: 100vh;
+    height: 100lvh;
     margin-left: 0px;
     flex-direction: column;
     overflow-y: hidden;

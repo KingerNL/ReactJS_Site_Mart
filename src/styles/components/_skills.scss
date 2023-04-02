@@ -1,7 +1,7 @@
 
 .skills_container{
   height: 1140px;
-  // height: 100dvh;
+  // height: 100lvh;
   display: flex;
     flex-direction: row;
     position: relative;
@@ -305,7 +305,6 @@
   .skills_container {
     flex-direction: column;
     height: auto;
-    overflow: scroll;
   }
   .content_skills {
     flex-direction: column;
