@@ -7,7 +7,7 @@ function skills() {
             <div className="content_skills">
             <div className="skills_text">
                 <h2 className="animate__animated animate__fadeIn animate__delay-1s">Skills &amp; Experience</h2>
-                <p>Because I'm a Mechatronics &amp; Robotics student with a mechanical background, I'm very multi-disciplined.</p>
+                <p>Because I'm a mechatronics &amp; robotics student with a mechanical background, I'm very multi-disciplined.</p>
                 <p>I've expereience in:</p>
                 <ul>
                     <li><p>AutoCAD Inventor</p></li>    
@@ -17,7 +17,7 @@ function skills() {
                     <li><p>LADDER / Structured text</p></li>    
                     <li><p>Frontend web / ReactJS</p></li>
                 </ul>
-                <p> For more information about me and my (current) work experience, can always check out my <a href="https://www.linkedin.com/in/mart-veldkamp-b3a01220a/"> LinkedIn</a> profile.</p>
+                <p> For more information about me and my (current) work experience, you can always check out my <a href="https://www.linkedin.com/in/mart-veldkamp-b3a01220a/"> LinkedIn</a> profile.</p>
             </div>
             <div className="skills-details">
                 <div className="chart_box">
