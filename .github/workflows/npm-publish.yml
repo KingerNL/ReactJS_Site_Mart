@@ -18,9 +18,18 @@ jobs:
 
     - name: Build # Build the project
       run: npm run build # Run the npm run build command
-
-    - name: Copy Build Artifacts # Copy the build artifacts to another repository
-      uses: actions/upload-artifact@v2 # Use the actions/upload-artifact action
-      with:
-        name: build # Name of the artifact
-        path: build/ # Path to the build artifacts
+    
+    - name: Prepare build dir
+      run: |
+        mkdir cloned-repo
+        git clone https://github.com/KingerNL/cv cloned-repo
+        cd cloned-repo
+        shopt -s extglob
+        rm -rf !(.git) # Remove all files and folders except .git
+    
+    - name: Commit and push changes
+      run: |
+        cd cloned-repo
+        git add -A
+        git commit -m "Update build artifacts"
+        git push origin main
