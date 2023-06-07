@@ -2,11 +2,12 @@
 
 .home {
   position: relative;
-  height: 100vh;
-  height: 100lvh;
+  height: 85vh;
+  height: 85lvh;
+  margin: 0;
+  margin-top: 10vh;
+  margin-top: 10lvh;
   overflow: hidden;
-  margin: 0px;
-  margin-bottom: 20vh;
   display: -webkit-flex; /* Safari 8 */
   display: -ms-flexbox; /* IE 10 */
     display: flex;
@@ -32,11 +33,10 @@
   .hometext {
     display: flex;
     align-items: flex-start;
+    padding-left: 10%;
     flex-direction: column;
     justify-content: center;
     height: 100%;
-    margin-bottom: 30vh;
-    margin-left: 20vh;
     cursor: default;
     h1 {
       color: #fff;
@@ -47,6 +47,29 @@
       line-height: 6.5rem;
       position: relative;
     }
+    .HeaderHomeText{
+      white-space: pre-wrap;
+      h2 {
+        width: 380px;
+        font-size: 2rem;
+        color: #EE1D52;
+        font-family: 'Inter';
+        margin: 0;
+      }
+      margin-bottom: 40px;
+    }
+    .FooterHomeText{
+      display: flex;
+      width: 100%;
+      justify-content: flex-end;
+      h3 {
+        width: 150px;
+        font-size: 1rem;
+        font-family: 'Inter';
+        float: right;
+        text-align: right;
+      }
+    }
     .space{
       padding-right: 0.2em;
     }
@@ -56,6 +79,41 @@
     }
   }
 
+  .AnimatedM{
+    max-width: 40%;
+  }
+  
+  .typing-animation {
+    display: inline-block; /* Add display property to make the element inline */
+    position: relative; /* Add relative positioning */
+    overflow: hidden;
+    animation: typing 1s steps(40, end);
+  }
+  
+  .typing-animation::after {
+    content: "_";
+    position: absolute; /* Change back to absolute positioning */
+    margin-left: 2px;
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes typing {
+    from {
+      width: 0;
+    }
+    to {
+      width: 100%;
+    }
+  }
+  
+  @keyframes blink {
+    0%, 100% {
+      opacity: 0;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
   /* Phone settings */
 
 @media (max-width: 768px) {
