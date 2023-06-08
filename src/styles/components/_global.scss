@@ -49,22 +49,113 @@ body {
 /* NavigationBar */
 
 .NavigationBarContainer {
-  position: absolute;
+  position: fixed;
   font-family: 'Inter';
   font-weight: bold;
-  top: 2%;
-  left: 25%;
-  width: 50%;
-  height: 5%;
-  border-radius: 50px;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
   background-color: #1d1d1d;
   -webkit-box-shadow: 10px 10px 10px 10px rgb(0 0 0 / 10%), 0 10px 10px 0 rgb(0 0 0 / 10%);
   -moz-box-shadow:    10px 10px 10px 10px rgb(0 0 0 / 10%), 0 10px 10px 0 rgb(0 0 0 / 10%);
   box-shadow:         10px 10px 10px 10px rgb(0 0 0 / 10%), 0 10px 10px 0 rgb(0 0 0 / 10%);
   display: flex;
   flex-direction: row;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
+  z-index: 3;
+  ul, ol {
+    list-style: none;
+  }
+  a {
+    padding-right: 30px;
+    padding-left: 30px;
+    height: 40px;
+    border-right: 1px solid #4d4d4d;
+    display: flex;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+    transition: color 0.3s ease;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: .2em;
+    font-size: 15px;
+  }
+  a:first-of-type {
+    border-left: 1px solid #4d4d4d;
+  }
+  a:hover {
+    cursor: pointer;
+    color:#ff1b54;
+  }
+  .active {
+    position: relative;
+    color: #ff1b54;
+  }
+  .active::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 1px;
+    background-color: #ff1b54;
+    opacity: 1;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+
+  .inactive {
+    position: relative;
+    color: #787878;
+  }
+
+  .inactive::before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+    width: 70%;
+    height: 1px;
+    background-color: #ff1b54;
+    opacity: 1;
+    animation-duration: 0.3s;
+    animation-fill-mode: both;
+    animation-timing-function: ease-in-out;
+  }
+  
+  @keyframes fade-out {
+    from {
+      opacity: 1;
+      width: 70%;
+    }
+    to {
+      opacity: 0;
+      width: 0;
+    }
+  }
+
+  @keyframes fade-in {
+    from {
+      opacity: 0;
+      width: 0;
+    }
+    to {
+      opacity: 1;
+      width: 70%;
+    }
+  }
+  
+  .nav-link.active::before {
+    animation-name: fade-in;
+  }
+
+  .nav-link.inactive::before {
+    animation-name: fade-out;
+  }
+
 }
 
 @supports (-webkit-backdrop-filter: none) or (backdrop-filter: none) {
@@ -170,7 +261,7 @@ body {
   overflow-x: hidden;
   .TopText {
     position: absolute;
-    top: 1%;
+    top: 100px;
     right: 0;
     width: 200px;
     font-size: 0.7rem;

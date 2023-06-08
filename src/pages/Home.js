@@ -2,8 +2,6 @@ import React from 'react';
 import Lottie from 'react-lottie';
 import Animated_M from '../lotties/Animated_M.json';
 import HomeText from "./Home_elements/HomeText";
-// import ReactAnime  from 'react-animejs'
-// import {motion} from 'framer-motion'
 
 export default function Home() {
   const defaultOptions = {

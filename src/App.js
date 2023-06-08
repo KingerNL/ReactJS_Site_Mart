@@ -1,12 +1,10 @@
 import { useEffect, useState } from "react";
-// import { motion } from "framer-motion";
 import "./styles/main.scss"
 import Home from "./pages/Home";
-// import Footer from "./pages/Footer";
 import CanvasBackground from './pages/Canvas';
-// import NavigationBar from "./pages/NavigatonBar";
 import cv from './styles/content/Mart_Veldkamp.pdf';
 import NavigationBar from "./pages/NavigatonBar";
+import About from "./pages/About";
 
 export default function App() {
   const [currentTime, setCurrentTime] = useState(getCurrentTime());
@@ -37,6 +35,7 @@ export default function App() {
           <h2>{currentTime}</h2> {/* Display the current time */}
         </div>
           <Home />
+          <About />
           <a href={cv} download="Mart_Veldkamp.pdf">
             <div className="PDF">
               <p>Can't get enough?</p>
