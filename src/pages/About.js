@@ -1,8 +1,14 @@
+import photo_me from "../Images/photo_me.webp"
+
 
 export default function About() {
 
     return (
         <div className="home_about">
+            <div className="about_picture">
+                <div className= "circle" src="" alt="" />
+                <img className= "person_img" src={photo_me} alt="Mart with glasses" />
+            </div>
             <div className="about_text">
                 <h2> Me, Myself &amp; I</h2>
                 <p> Although I am studying mechatronics &amp; robotics, I began as a mechanical engineer. In the third year of my studies, I was able to choose a major, and I chose mechatronics &amp; robotics. In addition to my hobby, I enjoy front-end web development (hence the existence of this website 😉).</p>

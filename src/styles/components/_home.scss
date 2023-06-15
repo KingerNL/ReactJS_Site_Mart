@@ -3,9 +3,8 @@
 .home {
   position: relative;
   height: 100vh;
-  height: 100lvh;
   margin: 0;
-  overflow: hidden;
+  overflow-x: hidden;
   display: -webkit-flex; /* Safari 8 */
   display: -ms-flexbox; /* IE 10 */
     display: flex;
@@ -84,7 +83,7 @@
   .typing-animation {
     display: inline-block; /* Add display property to make the element inline */
     position: relative; /* Add relative positioning */
-    overflow: hidden;
+    overflow-x: hidden;
     animation: typing 1s steps(40, end);
   }
   

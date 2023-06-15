@@ -1,9 +1,8 @@
 import React from "react"
-import { motion } from "framer-motion"
 
-function skills() {
+export default function skills() {
     return(
-        <motion.div className="skills_container">
+        <div className="skills_container">
             <div className="content_skills">
             <div className="skills_text">
                 <h2 className="animate__animated animate__fadeIn animate__delay-1s">Skills &amp; Experience</h2>
@@ -69,9 +68,6 @@ function skills() {
                 </div>
             </div>
         </div>
-    </motion.div>  
+    </div>  
     )
 }
-
-
-export default skills;

@@ -6,7 +6,7 @@
     flex-direction: row;
     position: relative;
     align-items: center;
-    background: #1B1A22;
+  background: transparent;
     svg {
         position: absolute;
         z-index: 0;
@@ -88,8 +88,7 @@
   bottom: 0;
   background:
     linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-    linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px),
-    #1B1A22;
+    linear-gradient(to right, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
   background-size: 20px 20px, 20px 20px, 100% 20px;
   background-position: -10px -10px, -10px -10px, 0 0;
   opacity: 0.5;
